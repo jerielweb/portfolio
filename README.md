@@ -2,29 +2,38 @@
 
 Portfolio personal optimizado para SEO y desplegado en Render.
 
-## 🚀 Despliegue en Render
+Este es un portafolio personal desarrollado con HTML, CSS y JavaScript. Está publicado usando *GitHub Pages*.
 
-### Pasos para desplegar:
+🔗 *URL del sitio:*  
+[https://jerielweb.github.io/portfolio/](https://jerielweb.github.io/portfolio/)
 
-1. **Subir a GitHub:**
-   ```bash
-   git add .
-   git commit -m "Initial commit: Portfolio with SEO optimization"
-   git remote add origin https://github.com/TU-USUARIO/jeriel-portfolio.git
-   git push -u origin main
-   ```
+---
 
-2. **Crear servicio en Render:**
-   - Ir a [render.com](https://render.com)
-   - Crear cuenta con GitHub
-   - New + → Static Site
-   - Conectar repositorio
-   - Configuración:
-     - Name: `jeriel-portfolio`
-     - Branch: `main`
-     - Build Command: (vacío)
-     - Publish Directory: (vacío)
+🚀 Cómo publicar en GitHub Pages
 
+1. Subir el proyecto a GitHub
+
+Ya lo tienes en:  
+`https://github.com/jerielweb/portfolio`
+
+2. Activar GitHub Pages
+
+- Ir a *Settings* del repositorio
+- Luego a *Pages*
+- En *Source*, seleccionar la rama `main` y la carpeta `/ (root)`
+- Guardar
+
+GitHub generará la URL del sitio automáticamente.
+
+---
+
+📝 Notas
+
+- El archivo principal debe llamarse `index.html`
+- GitHub Pages solo admite sitios *estáticos* (sin back-end)
+- Para actualizar tu sitio: sube cambios → `git add .`, `commit`, `push` y listo.
+
+```
 3. **Actualizar URLs después del despliegue:**
    ```bash
    ./update-urls.sh https://tu-dominio.onrender.com
