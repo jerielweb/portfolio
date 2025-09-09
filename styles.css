@@ -262,10 +262,30 @@ nav .navigation a:hover {
 }
 
 .theme-icon {
-    font-size: 16px;
-    transition: all 0.3s ease;
     position: absolute;
     left: 6px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-icon svg {
+    width: 16px;
+    height: 16px;
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+}
+
+.moon-icon {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.sun-icon {
+    opacity: 0;
+    transform: rotate(180deg);
 }
 
 .theme-switch input:checked + .slider {
@@ -274,7 +294,16 @@ nav .navigation a:hover {
 
 .theme-switch input:checked + .slider .theme-icon {
     left: 36px;
-    transform: rotate(180deg);
+}
+
+.theme-switch input:checked + .slider .moon-icon {
+    opacity: 0;
+    transform: rotate(-180deg);
+}
+
+.theme-switch input:checked + .slider .sun-icon {
+    opacity: 1;
+    transform: rotate(0deg);
 }
 
 .slider:before {
@@ -1034,8 +1063,14 @@ progress::-moz-progress-bar {
     }
     
     .theme-icon {
-        font-size: 14px;
+        width: 14px;
+        height: 14px;
         left: 5px;
+    }
+    
+    .theme-icon svg {
+        width: 14px;
+        height: 14px;
     }
     
     .theme-switch input:checked + .slider .theme-icon {
