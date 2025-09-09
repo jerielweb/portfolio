@@ -137,6 +137,7 @@ nav .navigation a.active {
     background-color: var(--bg-tertiary);
 }
 nav .navigation a:hover {
+    padding: 10px;
     color: var(--text-secondary);
     border-radius: 8px;
     background-color: var(--bg-tertiary);
