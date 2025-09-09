@@ -98,6 +98,7 @@ a {
     font-size: 18px;
 }
 a:active, a:visited {
+    padding: 5px;
     color: var(--text-link-hover);
 }
 a:hover {
