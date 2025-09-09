@@ -276,18 +276,18 @@ nav .navigation a:hover {
 .theme-icon span {
     position: absolute;
     font-size: 14px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     line-height: 1;
 }
 
 .moon-icon {
     opacity: 1;
-    transform: rotate(0deg);
+    transform: rotate(0deg), translateX(0);
 }
 
 .sun-icon {
     opacity: 0;
-    transform: rotate(180deg);
+    transform: rotate(180deg), translateX(3%);
 }
 
 .theme-switch input:checked + .slider {
