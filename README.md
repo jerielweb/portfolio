@@ -53,9 +53,8 @@ Portfolio/
 ├── index.html         # Página principal optimizada para SEO
 ├── styles.css         # Estilos CSS
 ├── main.js            # JavaScript
-├── robots.txt         # Configuración para motores de búsqueda
+├── robots.txt         # Configuración motores de búsqueda
 ├── sitemap.xml        # Mapa del sitio
-├── update-urls.sh     # Script para actualizar URLs
 ├── img/               # Imágenes optimizadas
 ├── svg/               # Iconos SVG
 └── doc/               # Documentos (CV)
