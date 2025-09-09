@@ -81,10 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (theme === 'light') {
       html.setAttribute('data-theme', 'light');
       themeIcon.textContent = '☀️';
+      themeToggle.checked = true;
       localStorage.setItem('theme', 'light');
     } else {
       html.removeAttribute('data-theme');
       themeIcon.textContent = '🌙';
+      themeToggle.checked = false;
       localStorage.setItem('theme', 'dark');
     }
   }
@@ -107,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   // Event listeners
-  themeToggle.addEventListener('click', toggleTheme);
+  themeToggle.addEventListener('change', toggleTheme);
   
   // Escuchar cambios en la preferencia del sistema
   window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
