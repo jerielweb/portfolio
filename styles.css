@@ -18,7 +18,23 @@
     --shadow: rgba(0, 0, 0, 0.3);
 }
 
-/* Tema claro */
+[data-theme="dark"] {
+    --bg-primary: #11001d;        
+    --bg-secondary: #2a0e57;
+    --bg-tertiary: #431464;
+    --bg-hover: #703d8d;
+    --text-primary: #eee2fd;
+    --text-secondary: #dfc6fe;
+    --text-accent: #cca2ff;
+    --text-link: #ad6dfc;
+    --text-link-hover: #cca2ff;
+    --border-color: #9861bd;
+    --progress-bg: #6f00ff;
+    --progress-value: #4b00a7;
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+
+
 [data-theme="light"] {
     --bg-primary: #f8f4ff;
     --bg-secondary: #ffffff;
@@ -34,20 +50,38 @@
     --progress-value: #5b21b6;
     --shadow: rgba(124, 58, 237, 0.15);
 }
+/* Media queries para detección automática del tema del sistema */
+/* Solo se aplican cuando no hay un tema manual establecido */
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme]) {
+        --bg-primary: #11001d;
+        --bg-secondary: #2a0e57;
+        --bg-tertiary: #431464;
+        --bg-hover: #703d8d;
+        --text-primary: #eee2fd;
+        --text-secondary: #dfc6fe;
+        --text-accent: #cca2ff;
+        --text-link: #ad6dfc;
+        --text-link-hover: #cca2ff;
+        --border-color: #9861bd;
+        --progress-bg: #6f00ff;
+        --progress-value: #4b00a7;
+        --shadow: rgba(0, 0, 0, 0.3);
+    }
+}
 
-/* Detección automática del tema del sistema */
 @media (prefers-color-scheme: light) {
-    :root {
+    html:not([data-theme]) {
         --bg-primary: #f8f4ff;
         --bg-secondary: #ffffff;
         --bg-tertiary: #e8d5ff;
-        --bg-hover: #b98bfa;
+        --bg-hover: #d4b5ff;
         --text-primary: #2d1b69;
         --text-secondary: #4a2c8a;
         --text-accent: #6b46c1;
         --text-link: #7c3aed;
         --text-link-hover: #5b21b6;
-        --border-color: #9861bd;
+        --border-color: #8c7ccc;
         --progress-bg: #7c3aed;
         --progress-value: #5b21b6;
         --shadow: rgba(124, 58, 237, 0.15);

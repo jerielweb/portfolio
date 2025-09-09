@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       themeToggle.checked = true;
       localStorage.setItem('theme', 'light');
     } else {
-      html.removeAttribute('data-theme');
+      html.setAttribute('data-theme', 'dark');
       themeToggle.checked = false;
       localStorage.setItem('theme', 'dark');
     }
@@ -92,17 +92,33 @@ document.addEventListener('DOMContentLoaded', () => {
   // Función para inicializar el tema
   function initTheme() {
     const savedTheme = localStorage.getItem('theme');
-    const systemTheme = getSystemTheme();
     
-    // Si hay un tema guardado, usarlo; si no, usar el tema del sistema
-    const theme = savedTheme || systemTheme;
-    applyTheme(theme);
+    if (savedTheme) {
+      // Si hay un tema guardado manualmente, usarlo
+      applyTheme(savedTheme);
+    } else {
+      // Si no hay tema guardado, no establecer data-theme para permitir detección automática
+      // El CSS con media queries se encargará del tema automático
+      const systemTheme = getSystemTheme();
+      // Solo actualizar el estado del toggle sin establecer data-theme
+      themeToggle.checked = systemTheme === 'light';
+    }
   }
   
   // Función para cambiar el tema
   function toggleTheme() {
     const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    let newTheme;
+    
+    if (currentTheme === 'light') {
+      newTheme = 'dark';
+    } else if (currentTheme === 'dark') {
+      newTheme = 'light';
+    } else {
+      // Si no hay data-theme (tema automático), determinar basado en el toggle
+      newTheme = themeToggle.checked ? 'light' : 'dark';
+    }
+    
     applyTheme(newTheme);
   }
   
@@ -110,10 +126,13 @@ document.addEventListener('DOMContentLoaded', () => {
   themeToggle.addEventListener('change', toggleTheme);
   
   // Escuchar cambios en la preferencia del sistema
-  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+  mediaQuery.addEventListener('change', (e) => {
     // Solo cambiar si no hay un tema guardado manualmente
     if (!localStorage.getItem('theme')) {
-      applyTheme(e.matches ? 'light' : 'dark');
+      // Actualizar el toggle para reflejar el cambio del sistema
+      themeToggle.checked = e.matches;
+      // No establecer data-theme para permitir que CSS maneje el tema automático
     }
   });
   
