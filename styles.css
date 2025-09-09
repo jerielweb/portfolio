@@ -3,17 +3,16 @@
 
 /* Variables de tema */
 :root {
-    /* Tema oscuro (por defecto) */
     --bg-primary: #11001d;
     --bg-secondary: #2a0e57;
     --bg-tertiary: #431464;
-    --bg-hover: #5d247e;
+    --bg-hover: #703d8d;
     --text-primary: #eee2fd;
     --text-secondary: #dfc6fe;
     --text-accent: #cca2ff;
     --text-link: #ad6dfc;
     --text-link-hover: #cca2ff;
-    --border-color: #8852ac;
+    --border-color: #9861bd;
     --progress-bg: #6f00ff;
     --progress-value: #4b00a7;
     --shadow: rgba(0, 0, 0, 0.3);
@@ -48,7 +47,7 @@
         --text-accent: #6b46c1;
         --text-link: #7c3aed;
         --text-link-hover: #5b21b6;
-        --border-color: #8c7ccc;
+        --border-color: #9861bd;
         --progress-bg: #7c3aed;
         --progress-value: #5b21b6;
         --shadow: rgba(124, 58, 237, 0.15);
@@ -93,7 +92,7 @@ main {
     gap: 38px;
 }
 a {
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     padding: 5px;
     color: var(--text-link);
     text-decoration: none;
