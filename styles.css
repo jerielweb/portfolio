@@ -543,7 +543,7 @@ progress {
 .proyect-img-container {
     justify-content: space-around;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
     font-size: 14px;
