@@ -475,6 +475,7 @@ nav .navigation a:hover {
     height: 20px;
 }
 #project-description {
+    width: 125px;
     font-family: "Roboto", sans-serif;
     color: var(--text-secondary);
     font-size: 15px;
@@ -491,7 +492,7 @@ nav .navigation a:hover {
     margin-top: 20px;
 }
 .project-item {
-    height: auto;
+    height: 160px;
     background-color: var(--bg-tertiary);
     padding: 15px;
     border-radius: 10px;
