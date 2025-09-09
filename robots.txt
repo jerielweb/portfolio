@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://tu-usuario.github.io/jeriel-porfolio/sitemap.xml
+Sitemap: https://jerielweb.github.io/portfolio/sitemap.xml
 
 # Optimización para motores de búsqueda
 Crawl-delay: 1
