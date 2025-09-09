@@ -271,11 +271,11 @@ nav .navigation a:hover {
     justify-content: center;
 }
 
-.theme-icon svg {
-    width: 16px;
-    height: 16px;
+.theme-icon span {
+    position: absolute;
+    font-size: 14px;
     transition: all 0.3s ease;
-    color: var(--text-primary);
+    line-height: 1;
 }
 
 .moon-icon {
@@ -1068,9 +1068,8 @@ progress::-moz-progress-bar {
         left: 5px;
     }
     
-    .theme-icon svg {
-        width: 14px;
-        height: 14px;
+    .theme-icon span {
+        font-size: 12px;
     }
     
     .theme-switch input:checked + .slider .theme-icon {
