@@ -21,8 +21,8 @@
 
 /* Tema claro */
 [data-theme="light"] {
-    --bg-primary: #ffffff;
-    --bg-secondary: #dd9edd;
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #ffffff;
     --bg-tertiary: #e9ecef;
     --bg-hover: #dee2e6;
     --text-primary: #231023;
@@ -39,8 +39,8 @@
 /* Detección automática del tema del sistema */
 @media (prefers-color-scheme: light) {
     :root {
-        --bg-primary: #ffffff;
-        --bg-secondary: #dd9edd;
+        --bg-primary: #f8f9fa;
+        --bg-secondary: #ffffff;
         --bg-tertiary: #e9ecef;
         --bg-hover: #dee2e6;
         --text-primary: #231023;
