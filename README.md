@@ -38,7 +38,7 @@ GitHub generará la URL del sitio automáticamente.
 3. **Actualizar URLs después del despliegue:**
 
 ```
-   https://`tu usuario`.github.io/`tu repositorio`
+   https://tu-usuario.github.io/tu-repositorio
    git add .
    git commit -m "Update URLs for production"
    git push
