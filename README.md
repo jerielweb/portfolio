@@ -25,7 +25,7 @@ Ya lo tienes en:
 
 GitHub generará la URL del sitio automáticamente.
 
----
+
 
 📝 Notas
 
@@ -33,17 +33,19 @@ GitHub generará la URL del sitio automáticamente.
 - GitHub Pages solo admite sitios *estáticos* (sin back-end)
 - Para actualizar tu sitio: sube cambios → `git add .`, `commit`, `push` y listo.
 
----
+
+
 3. **Actualizar URLs después del despliegue:**
 
 ```
-   ./update-urls.sh https://`tu usuario`.github.io/`tu repositorio`
+   https://`tu usuario`.github.io/`tu repositorio`
    git add .
    git commit -m "Update URLs for production"
    git push
 
 ```
 ---
+
 ## 📁 Estructura del proyecto
 
 ```
