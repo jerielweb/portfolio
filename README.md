@@ -35,8 +35,8 @@ GitHub generará la URL del sitio automáticamente.
 
 ```
 3. **Actualizar URLs después del despliegue:**
-   ```bash
-   ./update-urls.sh https://tu-dominio.onrender.com
+   ```
+   ./update-urls.sh https://`tu usuario`.github.io/`tu repositorio`
    git add .
    git commit -m "Update URLs for production"
    git push
