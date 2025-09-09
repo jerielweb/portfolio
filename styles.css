@@ -222,7 +222,6 @@ nav .navigation a:hover {
 .theme-toggle {
     position: fixed;
     top: 20px;
-    right: 20px;
     z-index: 1001;
 }
 
