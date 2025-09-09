@@ -80,12 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function applyTheme(theme) {
     if (theme === 'light') {
       html.setAttribute('data-theme', 'light');
-      themeIcon.textContent = '☀️';
+      themeIcon.textContent = '';
       themeToggle.checked = true;
       localStorage.setItem('theme', 'light');
     } else {
       html.removeAttribute('data-theme');
-      themeIcon.textContent = '🌙';
+      themeIcon.textContent = '';
       themeToggle.checked = false;
       localStorage.setItem('theme', 'dark');
     }
