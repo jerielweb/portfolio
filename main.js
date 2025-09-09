@@ -1,5 +1,6 @@
-// Resalta la pestaña activa según la sección visible
-window.addEventListener('DOMContentLoaded', () => {
+// Inicialización principal - Todo se ejecuta cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+  // ===== NAVEGACIÓN ACTIVA =====
   const sections = document.querySelectorAll('section, .about, .knowledge, .projects, .contact, .experience, .education');
   const navLinks = document.querySelectorAll('nav .navigation a');
 
@@ -17,10 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', activateNav);
   activateNav();
-});
 
-// Funcionalidad del menú hamburguesa para móviles
-document.addEventListener('DOMContentLoaded', () => {
+  // ===== MENÚ HAMBURGUESA =====
   const hamburgerBtn = document.getElementById('hamburgerBtn');
   const navMenu = document.getElementById('navMenu');
   const navOverlay = document.getElementById('navOverlay');
@@ -47,13 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = 'auto';
   }
   
-  // Event listeners
+  // Event listeners del menú hamburguesa
   hamburgerBtn.addEventListener('click', toggleMenu);
   navOverlay.addEventListener('click', closeMenu);
   
   // Cerrar menú al hacer clic en un enlace
-  const navLinks = document.querySelectorAll('.nav-menu a');
-  navLinks.forEach(link => {
+  const navMenuLinks = document.querySelectorAll('.nav-menu a');
+  navMenuLinks.forEach(link => {
     link.addEventListener('click', closeMenu);
   });
   
@@ -63,10 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
       closeMenu();
     }
   });
-});
 
-// Sistema de temas claro/oscuro
-document.addEventListener('DOMContentLoaded', () => {
+  // ===== SISTEMA DE TEMAS =====
   const themeToggle = document.getElementById('themeToggle');
   const themeIcon = document.querySelector('.theme-icon');
   const html = document.documentElement;
@@ -122,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTheme(newTheme);
   }
   
-  // Event listeners
+  // Event listeners del sistema de temas
   themeToggle.addEventListener('change', toggleTheme);
   
   // Escuchar cambios en la preferencia del sistema
