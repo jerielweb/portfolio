@@ -131,13 +131,14 @@ nav {
     display: none;
 }
 nav .navigation a.active {
+    padding: 5px;
     color: var(--text-primary);
     font-weight: 850;
     border-radius: 8px;
     background-color: var(--bg-tertiary);
 }
 nav .navigation a:hover {
-    padding: 10px;
+    padding: 5px;
     color: var(--text-secondary);
     border-radius: 8px;
     background-color: var(--bg-tertiary);
