@@ -55,7 +55,6 @@ Portfolio/
 ├── main.js            # JavaScript
 ├── robots.txt         # Configuración para motores de búsqueda
 ├── sitemap.xml        # Mapa del sitio
-├── render.yaml        # Configuración
 ├── update-urls.sh     # Script para actualizar URLs
 ├── img/               # Imágenes optimizadas
 ├── svg/               # Iconos SVG
