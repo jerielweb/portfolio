@@ -449,7 +449,7 @@ nav .navigation a:hover {
     margin-bottom: 20px;
 }
 #project-link {
-    margin-top: 15px;
+    margin-top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,6 +474,7 @@ nav .navigation a:hover {
     margin-top: 7px;
     width: 20px;
     height: 20px;
+    margin-top: 0 !important;
 }
 #project-description {
     width: 250px;
@@ -493,7 +494,7 @@ nav .navigation a:hover {
     margin-top: 20px;
 }
 .project-item {
-    height: 500px;
+    height: 520px;
     width: 300px;
     background-color: var(--bg-tertiary);
     padding: 15px;
@@ -506,6 +507,7 @@ nav .navigation a:hover {
     transition: background-color 0.3s, transform 0.3s;
 }
 #project-image {
+    margin-bottom: 0 !important;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -513,11 +515,8 @@ nav .navigation a:hover {
     border-radius: 15;
     width: 260px;
     height: 146.25px;
-    margin-bottom: 10px;
 }
-.project-item img {
-    margin-bottom: 10px;
-}
+
 .project-item p {
     font-family: "Roboto", sans-serif;
     color: var(--text-primary);
@@ -557,7 +556,7 @@ progress {
     color: var(--text-primary);
     margin: 0;
     padding: 0;
-    margin-top: 5px;
+    margin-top: 0;
 }
 #proyect-text-container {
     text-align: left;
