@@ -250,8 +250,9 @@ nav .navigation a:hover {
 /* Interruptor de tema */
 .theme-toggle {
     position: absolute;
-    top: 20px;
-    left: 1425px;
+    top: 19px;
+    left: 0px;
+    transform: rotate(-90deg) scale(0.5);
     margin-top: 5px;
     display: flex;
     justify-content: center;
