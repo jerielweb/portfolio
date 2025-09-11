@@ -50,8 +50,7 @@
     --progress-value: #5b21b6;
     --shadow: rgba(124, 58, 237, 0.15);
 }
-/* Media queries para detección automática del tema del sistema */
-/* Solo se aplican cuando no hay un tema manual establecido */
+
 @media (prefers-color-scheme: dark) {
     html:not([data-theme]) {
         --bg-primary: #11001d;
@@ -102,12 +101,8 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     padding: 15px;
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 main {
     position: relative;
@@ -119,9 +114,8 @@ main {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: calc(100% - 250px);
     gap: 38px;
 }
@@ -255,6 +249,9 @@ nav .navigation a:hover {
 
 /* Interruptor de tema */
 .theme-toggle {
+    position: absolute;
+    top: 20px;
+    left: 1425px;
     margin-top: 5px;
     display: flex;
     justify-content: center;
@@ -358,13 +355,14 @@ nav .navigation a:hover {
 
 /* Container */
 .about {
-    padding: 20px;
     width: 95%;
+    padding: 20px;
     display: flex;
     position: relative;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+    align-content: left;
 }
 #name-banner {
     font-family: "raleway", sans-serif;
@@ -380,6 +378,7 @@ nav .navigation a:hover {
     font-weight: 700;
 }
 .description {
+    max-width: 60vh;
     font-family: "Roboto", sans-serif;
     color: var(--text-secondary);
     font-size: 17px;
@@ -430,14 +429,14 @@ nav .navigation a:hover {
 /* Projects Section */
 .projects {
     position: relative;
+    max-width: 160vh;
     width: 95%;
     height: auto;
-    justify-content: center;
+    align-items: left;
     gap: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .section-title {
     text-align: left;
@@ -594,6 +593,7 @@ progress {
     position: relative;
     flex-wrap: wrap;
     width: 95%;
+    max-width: 160vh;
     padding: 20px;
     display: flex;
     position: relative;
@@ -671,6 +671,7 @@ progress::-moz-progress-bar {
 /* Education Section */
 .education {
     width: 95%;
+    max-width: 160vh;
     height: auto;
     padding: 20px;
     display: flex;
@@ -746,6 +747,7 @@ progress::-moz-progress-bar {
 
 .experience {
     position: relative;
+    max-width: 160vh;
     padding: 20px;
     display: flex;
     width: 95%;
@@ -829,8 +831,9 @@ progress::-moz-progress-bar {
 
 /* Contact Section */
 .contact {
-    height: 100vh;
+    height: auto;
     width: 95%;
+    max-width: 160vh;
     padding: 20px;
     display: flex;
     position: relative;
@@ -876,7 +879,7 @@ progress::-moz-progress-bar {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px var(--shadow);
 }
-.contact-item::before { 
+.contact-item::before {
     transition: all 0.3s;
     opacity: 0;
     align-items: center;
@@ -1007,7 +1010,7 @@ progress::-moz-progress-bar {
     justify-content: center;
     align-items: center;
     background-color: var(--bg-hover);
-    content: "Enviar Correo";
+    content: "Copiar al Portapapeles";
     font-family: "Roboto", sans-serif;
     color: var(--text-primary);
     font-size: 18px;
@@ -1046,6 +1049,7 @@ progress::-moz-progress-bar {
         background-color: var(--bg-secondary);
         box-shadow: 0 2px 10px var(--shadow);
     }
+
     .social-mobile {
         gap: 0;
         margin: 0;
@@ -1336,6 +1340,16 @@ progress::-moz-progress-bar {
         width: 30px;
         height: 30px;
     }
+    
+    .theme-toggle {
+        position: absolute;
+        top: 34px;
+        left: 550px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
@@ -1350,6 +1364,16 @@ progress::-moz-progress-bar {
         gap: 20px;
         margin-top: 70px;
     }
+    .theme-toggle {
+        position: absolute;
+        top: 23px;
+        left: 300px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .profile {
         margin-top: 0;
         margin-bottom: 0;
