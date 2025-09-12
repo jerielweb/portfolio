@@ -1,23 +1,34 @@
+import { handleScrollSpy } from '/utils/scroll-spy.js';
 // Inicialización principal - Todo se ejecuta cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
-  // ===== NAVEGACIÓN ACTIVA =====
-  const sections = document.querySelectorAll('section, .about, .knowledge, .projects, .contact, .experience, .education');
-  const navLinks = document.querySelectorAll('nav .navigation a');
+  // // ===== NAVEGACIÓN ACTIVA =====
+  // const sections = document.querySelectorAll('section, .about, .knowledge, .projects, .contact, .experience, .education');
+  // const navLinks = document.querySelectorAll('nav .navigation a');
 
-  function activateNav() {
-    let index = sections.length - 1;
-    for (let i = 0; i < sections.length; i++) {
-      const rect = sections[i].getBoundingClientRect();
-      if (rect.top <= 80) {
-        index = i;
-      }
-    }
-    navLinks.forEach(link => link.classList.remove('active'));
-    if (navLinks[index]) navLinks[index].classList.add('active');
-  }
+  // function activateNav() {
+  //   let index = sections.length - 1;
+  //   for (let i = 0; i < sections.length; i++) {
+  //     const rect = sections[i].getBoundingClientRect();
+  //     if (rect.top <= 80) {
+  //       index = i;
+  //     }
+  //   }
+  //   navLinks.forEach(link => link.classList.remove('active'));
+  //   if (navLinks[index]) navLinks[index].classList.add('active');
+  // }
 
-  window.addEventListener('scroll', activateNav);
-  activateNav();
+  // window.addEventListener('scroll', activateNav);
+	// activateNav();
+
+	// ===== NAVEGACIÓN ACTIVA (SCROLL SPY) =====
+	// Listen for the 'scroll' event on the window.
+	// Every time the user scrolls, call the handleScrollSpy function
+	// to update which navigation link should be active based on the current viewport.
+	window.addEventListener('scroll', handleScrollSpy);
+
+	// Call handleScrollSpy once immediately after page load to
+	// set the correct active navigation link without waiting for user scroll.
+	handleScrollSpy();
 
   // ===== MENÚ HAMBURGUESA =====
   const hamburgerBtn = document.getElementById('hamburgerBtn');
