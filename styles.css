@@ -528,8 +528,8 @@ nav .navigation a:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px var(--shadow);
 }
-.project-item:active {
-    transform: translateY(0);
+#project-link:active {
+    transform: scale(0.95);
 }
 progress {
     border: var(--border-color) 0.1px solid;
@@ -654,9 +654,6 @@ progress {
     background-color: var(--bg-hover);
     transform: translateY(-5px);
     box-shadow: 0 8px 25px var(--shadow);
-}
-.knowledge-item:active {
-    transform: translateY(0);
 }
 progress::-webkit-progress-value {
     background-color: var(--progress-value);
@@ -786,9 +783,6 @@ progress::-moz-progress-bar {
     background-color: var(--bg-hover);
     transform: translateY(-5px);
     box-shadow: 0 8px 25px var(--shadow);
-}
-.experience-item:active {
-    transform: translateY(0);
 }
 progress::-webkit-progress-value {
     background-color: var(--progress-value);
