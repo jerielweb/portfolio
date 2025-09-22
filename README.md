@@ -44,8 +44,6 @@ GitHub generará la URL del sitio automáticamente.
    git push
 
 ```
----
-
 ## 📁 Estructura del proyecto
 
 ```
@@ -55,9 +53,14 @@ Portfolio/
 ├── main.js            # JavaScript
 ├── robots.txt         # Configuración motores de búsqueda
 ├── sitemap.xml        # Mapa del sitio
-├── img/               # Imágenes optimizadas
-├── svg/               # Iconos SVG
-└── doc/               # Documentos (CV)
+├── assets/
+   ├── doc/            # Documentos
+   ├── favicon/        # Imagenes de la web
+   ├── icons/          # Iconos de la web
+   └── img/            # Ilustraciones de la web
+├── scripts/
+   ├── app.json        # App para el SEO
+   └── main.js         # Interacciòn del sitio
 ```
 
 ## 🔍 Optimizaciones SEO incluidas
@@ -75,3 +78,13 @@ Portfolio/
 - Email: jerielweb@outlook.es
 - LinkedIn: [Jeriel Beckford Price](https://www.linkedin.com/in/jeriel-beckford-price-74ba24330/)
 - WhatsApp: +506 8923-7369
+
+
+
+
+Portafolio Web — Jeriel Web
+
+Este es un portafolio personal desarrollado con HTML, CSS y JavaScript. Está publicado usando *GitHub Pages*.
+
+🔗 *URL del sitio:*  
+[https://jerielweb.github.io/portfolio/](https://jerielweb.github.io/portfolio/)

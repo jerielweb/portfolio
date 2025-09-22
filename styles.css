@@ -250,9 +250,7 @@ nav .navigation a:hover {
 /* Interruptor de tema */
 .theme-toggle {
     position: absolute;
-    top: 19px;
-    left: 0px;
-    transform: rotate(-90deg) scale(0.5);
+    transform: scale(0.7) translate(25%, 820%);
     margin-top: 5px;
     display: flex;
     justify-content: center;
@@ -528,8 +526,8 @@ nav .navigation a:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px var(--shadow);
 }
-#project-link:active {
-    transform: scale(0.95);
+.project-item:active {
+    transform: translateY(0);
 }
 progress {
     border: var(--border-color) 0.1px solid;
@@ -654,6 +652,9 @@ progress {
     background-color: var(--bg-hover);
     transform: translateY(-5px);
     box-shadow: 0 8px 25px var(--shadow);
+}
+.knowledge-item:active {
+    transform: translateY(0);
 }
 progress::-webkit-progress-value {
     background-color: var(--progress-value);
@@ -784,6 +785,9 @@ progress::-moz-progress-bar {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px var(--shadow);
 }
+.experience-item:active {
+    transform: translateY(0);
+}
 progress::-webkit-progress-value {
     background-color: var(--progress-value);
     border-radius: 20px;
@@ -826,7 +830,7 @@ progress::-moz-progress-bar {
 
 /* Contact Section */
 .contact {
-    height: auto;
+    height: 80vh;
     width: 95%;
     max-width: 160vh;
     padding: 20px;
@@ -1337,9 +1341,11 @@ progress::-moz-progress-bar {
     }
     
     .theme-toggle {
-        position: absolute;
-        top: 34px;
-        left: 550px;
+        z-index: 5000;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateX(15px) translateY(-2px);
         margin-top: 5px;
         display: flex;
         justify-content: center;
@@ -1360,9 +1366,11 @@ progress::-moz-progress-bar {
         margin-top: 70px;
     }
     .theme-toggle {
-        position: absolute;
-        top: 23px;
-        left: 300px;
+        z-index: 5000;        
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateX(15px) translateY(-2px);
         margin-top: 5px;
         display: flex;
         justify-content: center;

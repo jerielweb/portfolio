@@ -1,0 +1,24 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jeriel Beckford Price",
+    "jobTitle": "Desarrollador Web Frontend",
+    "description": "Estudiante de desarrollo web frontend especializado en HTML, CSS y JavaScript",
+    "url": "https://jerielweb.github.io/portfolio/",
+    "image": "https://jerielweb.github.io/portfolio/assets/img/profile.webp",
+    "email": "jerielweb@outlook.es",
+    "telephone": "+50689237369",
+    "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Costa Rica"
+    },
+    "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Instituto Nacional de Aprendizaje (INA)"
+    },
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "Desarrollo Web Frontend"],
+    "sameAs": [
+        "https://www.linkedin.com/in/jeriel-beckford-price-74ba24330/",
+        "https://wa.me/50689237369"
+    ]
+}
