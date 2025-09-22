@@ -244,12 +244,13 @@ nav .navigation a:hover {
     font-family: "montserrat", sans-serif;
     font-size: 15px;
     font-weight: 500;
+    margin-top: 30px;
     margin-left: 0 !important;
 }
 
 /* Interruptor de tema */
 .theme-toggle {
-    position: absolute;
+    position: fixed;
     transform: scale(0.7) translate(25%, 820%);
     margin-top: 5px;
     display: flex;
