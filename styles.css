@@ -140,7 +140,34 @@ ul {
 img {
     border-radius: 7px;
 }
-
+#mail-button {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    border: var(--border-color) 2px solid;
+    color: var(--text-primary);
+    border-radius: 25px;
+    padding: 8px 10px;
+    background-color: var(--bg-tertiary);
+}
+#mail-button img {
+    transform: translateY(2px);
+}
+h2 {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-direction: row;
+}
+[icon-theme] {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
 /* Slide Bar */
 nav {
     background-color: var(--bg-secondary);
@@ -385,9 +412,11 @@ nav .navigation a:hover {
     font-weight: 400;
 }
 .cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 5px 0 0;
-    width: 100px;
-    height: 35px;
+    padding: 8px 10px;
     transition: background-color 0.3s, color 0.3s, border-radius 0.2s;
     float: left;
     border: var(--border-color) solid 2px;
@@ -396,25 +425,27 @@ nav .navigation a:hover {
     text-align: center;
     border-radius: 20px;
 }
+[icon-cv] {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 3px !important;
+    transform: translate(0) !important;
+}
 .buttons-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 9%;
-}
-.cv:hover {
-    background-color: var(--bg-hover);
-    color: var(--text-primary);
-}
-.cv:active {
-    border-radius: 5px;
-}
-.cv-button {
-    text-align: center;
+    height: fit-content;
+    min-height: 60px;
+    gap: 10px;
 }
 .buttons-icons a {
     margin: 0;
     padding: 0;
+    gap: 5px;
+}
+.buttons-icons a:hover {
+    border-radius: .5em !important;
 }
 .logo-tanah-basah {
     align-items: center;
@@ -1359,6 +1390,9 @@ progress::-moz-progress-bar {
     body {
         padding: 5px;
     }
+    .section-title {
+        font-size: 43px;
+    }
     main {
         margin: 0;
         width: 100%;
@@ -1441,10 +1475,15 @@ progress::-moz-progress-bar {
         border-radius: 20px;
     }
     .buttons-icons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 9%;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        min-height: 50px;
+        justify-content: left;
+    }
+    .buttons-icons a {
+        margin-top: 10px;
     }
     .profile img {
         margin: 5px;
@@ -1497,5 +1536,9 @@ progress::-moz-progress-bar {
         font-weight: 700 !important;
         margin: 0 !important;
         color: var(--text-primary) !important;
+    }
+    .icon-theme {
+        width: 40px;
+        height: 40px;
     }
 }
