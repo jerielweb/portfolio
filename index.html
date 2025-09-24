@@ -160,10 +160,10 @@
 
                 <div class="project-link-container">
                 <a id="project-link" href="https://jerielweb.github.io/portfolio/" target="_blank">
-                    <img src="assets/icons/ir.svg" alt="Link" style="width:20px;height:20px;">
+                    <img class="icon-theme" id="link-icon" src="assets/icons/link-dark.svg" alt="Link">
                 </a>
                 <a id="project-link" href="https://github.com/jerielweb/portfolio" target="_blank">
-                    <img src="assets/icons/git-hub.svg" alt="Link" style="width:30px;height:30px;">
+                    <img id="github-icon" class="icon-theme" src="assets/icons/github-dark.svg" alt="Link">
                 </a>
                 </div>
             </div>
@@ -185,10 +185,10 @@
 
                 <div class="project-link-container">
                 <a id="project-link" href="https://jerielweb.github.io/calculadora/" target="_blank">
-                    <img src="assets/icons/ir.svg" alt="Link" style="width:20px;height:20px;">
+                    <img id="link-icon" class="icon-theme" src="assets/icons/link-dark.svg" alt="Link">
                 </a>
                 <a id="project-link" href="https://github.com/jerielweb/calculadora" target="_blank">
-                    <img src="assets/icons/git-hub.svg" alt="Link" style="width:30px;height:30px;">
+                    <img id="github-icon" class="icon-theme" src="assets/icons/github-dark.svg" alt="Link">
                 </a>
                 </div>
             </div>
@@ -210,10 +210,10 @@
 
                 <div class="project-link-container">
                 <a id="project-link" href="https://jerielweb.github.io/login-moderno/" target="_blank">
-                    <img src="assets/icons/ir.svg" alt="Link" style="width:20px;height:20px;">
+                    <img id="link-icon" class="icon-theme" src="assets/icons/link-dark.svg" alt="Link">
                 </a>
                 <a id="project-link" href="https://github.com/jerielweb/login-moderno" target="_blank">
-                    <img src="assets/icons/git-hub.svg" alt="Link" style="width:30px;height:30px;">
+                    <img id="github-icon" class="icon-theme" src="assets/icons/github-dark.svg" alt="Link">
                 </a>
                 </div>
             </div>
@@ -222,13 +222,13 @@
 
     <!-- Knowledge -->
     <section class="knowledge" id="knowledge">
-        <h2 class="section-title"><img class="icon-theme" src="assets/icons/know-light.svg" alt="Icono Ilustrativo" id="knowledge-icon" icon-theme>Conocimientos</h2>
+        <h2 class="section-title"><img class="icon-theme" src="assets/icons/know-dark.svg" alt="Icono Ilustrativo" id="knowledge-icon" icon-theme>Conocimientos</h2>
         <br>
         <h3 id="knowledge-title">Lenguajes</h3>
         <div class="knowledge-list">
             <div class="knowledge-item">
                 <img src="assets/favicon/html.webp" alt="HTML5 - Lenguaje de marcado web" style="width:100px;height:100px;"/>
-                <p>Basico</p>
+                <p>HTML5</p>
             </div>
 
             <div class="knowledge-item">
@@ -275,7 +275,7 @@
 
     <!-- Education -->
     <section class="education" id="education">
-        <h2 class="section-title"><img class="icon-theme" src="assets/icons/edu-light.svg" alt="Icono Ilustrativo" id="education-icon" icon-theme>Educación</h2>
+        <h2 class="section-title"><img class="icon-theme" src="assets/icons/edu-dark.svg" alt="Icono Ilustrativo" id="education-icon" icon-theme>Educación</h2>
         <br>
         <div class="education-list">
             <h2 id="education-title">Cursos</h2>
@@ -328,28 +328,51 @@
 
     <!-- Contact -->
     <section class="contact" id="contact">
-        <h2 class="section-title"><img class="icon-theme" src="assets/icons/contact-light.svg" alt="Icono Ilustrativo" id="contact-icon" icon-theme>Contacto</h2>
-        <br>
-        <div class="contact-list">
-            <a onclick="navigator.clipboard.writeText('jerielweb@outlook.es')"><div class="contact-item-email">
-                <h3>Email</h3>
-                <p>JERIELWEB@OUTLOOK.ES</p>
-            </div>
-        </a>
+        <h2 class="section-title"><img class="icon-theme" src="assets/icons/contact-dark.svg" alt="Icono Ilustrativo" id="contact-icon" icon-theme>Contacto</h2>
         
-        <a target="_blank" href="tel:+50689237369"><div class="contact-item-phone">
-                <h3>Teléfono</h3>
-                <p>+506 8923-7369</p>
+        <div class="contact-list">
+            <div class="contact-item">
+                <div class="contact-title">
+                    <h3>Correo electronico</h3>
+                    <p>JERIELWEB@OUTLOOK.ES</p>
+                </div>
+                
+                <div class="contact-link-mail">
+                    
+                    <a href="mailto:jerielweb@outlook.es"><img class="icon-theme" id="mail-icon" src="assets/icons/mail-dark.svg">
+                    </a>
+                    
+                    <a onclick="navigator.clipboard.writeText('jerielweb@outlook.es')">
+                        <img class="icon-theme" id="copy-icon" src="assets/icons/copy-dark.svg">
+                    </a>
+                </div>
             </div>
-        </a>
-            <a target="_blank" href="https://t.me/Oboe_boy"><div class="contact-item">
-                <h3>Telegram</h3>
-                <p>+506 8923 7369</p>
-            </div></a>
-            <a target="_blank" href="https://wa.me/50689237369"><div class="contact-item">
-                <h3>WhatsApp</h3>
-                <p>+506 8923 7369</p>
-            </div></a>
+            
+            <div class="contact-item">
+                <div class="contact-title">
+                    <h3>Numero de telefono</h3>
+                    <p>+506 8923 7369</p>
+                </div>
+                
+                <div class="contact-link-phone">
+                    <a href="tel:+50689237369">
+                        <img class="icon-theme" id="phone-icon" src="assets/icons/tel-dark.svg">
+                    </a>
+                    
+                    <a onclick="navigator.clipboard.writeText('+506 8923 7369')">
+                        <img class="icon-theme" id="copy-icon" src="assets/icons/copy-dark.svg">
+                    </a>
+                    
+                    <a href="https://wa.me/50689237369">
+                        <img class="icon-theme" id="whatsapp-icon" src="assets/icons/whatsapp-dark.svg">
+                    </a>
+                    
+                    <a href="https://t.me/Oboe_boy">
+                        <img class="icon-theme" id="telegram-icon" src="assets/icons/telegram-dark.svg">
+                    </a>
+                </div>
+            </div>
+            
         </div>
     </section>
     </main>
