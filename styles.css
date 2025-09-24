@@ -491,7 +491,7 @@ nav .navigation a:hover {
     transition: border-radius 0.3s, transform 0.3s;
 }
 #project-link:hover {
-    border-radius: 15px;
+    border-radius: .5em;
 }
 .project-link-container {
     display: flex;
@@ -502,8 +502,8 @@ nav .navigation a:hover {
 #project-link img {
     border-radius: 0;
     margin-top: 7px;
-    width: 20px;
-    height: 20px;
+    width: 25px !important;
+    height: 25px !important;
     margin-top: 0 !important;
 }
 #project-description {
@@ -552,27 +552,6 @@ nav .navigation a:hover {
     color: var(--text-primary);
     font-size: 18px;
     font-weight: 700;
-}
-.project-item:hover {
-    background-color: var(--bg-hover);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow);
-}
-.project-item:active {
-    transform: translateY(0);
-}
-progress {
-    border: var(--border-color) 0.1px solid;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 100px;
-    height: 10px;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: var(--progress-bg);
-    margin-top: 10px;
-    margin-bottom: 5px;
 }
 .proyect-img-container {
     width: 90%;
@@ -680,25 +659,6 @@ progress {
     font-size: 18px;
     font-weight: 700;
 }
-.knowledge-item:hover {
-    background-color: var(--bg-hover);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow);
-}
-.knowledge-item:active {
-    transform: translateY(0);
-}
-progress::-webkit-progress-value {
-    background-color: var(--progress-value);
-    border-radius: 20px;
-    transition: width 0.4s ease;
-}
-
-progress::-moz-progress-bar {
-    background-color: var(--progress-value);
-    border-radius: 20px;
-}
-
 /* Education Section */
 .education {
     width: 95%;
@@ -746,14 +706,7 @@ progress::-moz-progress-bar {
     font-size: 18px;
     font-weight: 700;
 }
-.education-item-courses:hover {
-    background-color: var(--bg-hover);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow);
-}
-.education-item-courses:active {
-    transform: translateY(0);
-}
+
 .education-item-courses h3 {
     font-family: "Roboto", sans-serif;
     color: var(--text-primary);
@@ -812,31 +765,7 @@ progress::-moz-progress-bar {
     font-size: 18px;
     font-weight: 700;
 }
-.experience-item:hover {
-    background-color: var(--bg-hover);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow);
-}
-.experience-item:active {
-    transform: translateY(0);
-}
-progress::-webkit-progress-value {
-    background-color: var(--progress-value);
-    border-radius: 20px;
-    transition: width 0.4s ease;
-}
-progress::-moz-progress-bar {
-    background-color: var(--progress-value);
-    border-radius: 20px;
-}
-.experience-item:hover {
-    background-color: var(--bg-hover);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow);
-}
-.experience-item:active {
-    transform: translateY(0);
-}
+
 #experience-title {
     font-family: "Roboto", sans-serif;
     color: var(--text-primary);
@@ -882,178 +811,76 @@ progress::-moz-progress-bar {
     margin-top: 20px;
 }
 .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     transition: all 0.3s;
     background-color: var(--bg-tertiary);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+    width: 17em;
+    height: auto;
     position: relative;
 }
-.contact-item h3 {
-    font-family: "Roboto", sans-serif;
-    color: var(--text-primary);
-    font-size: 18px;
-    font-weight: 700;
-}   
-.contact-item p {
-    font-family: "Roboto", sans-serif;
-    color: var(--text-primary);
-    font-size: 18px;
-    font-weight: 700;
+
+.contact-link-mail {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-link-mail a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 47%;
+    min-width: 60px;
+    border: var(--border-color) 2px solid;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.contact-link-phone {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.contact-link-phone a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    min-width: 50px;
+    border: var(--border-color) 2px solid;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.contact-item a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
 }
 .contact-item a {
-    text-decoration: none;
-    color: var(--text-primary);
-}
-.contact-item:hover {
     background-color: var(--bg-hover);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow);
 }
-.contact-item::before {
-    transition: all 0.3s;
-    opacity: 0;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-hover);
-    content: "Enviar mensaje";
-    font-family: "Roboto", sans-serif;
-    color: var(--text-primary);
-    font-size: 18px;
-    font-weight: 700;
+.contact-title h3 {
+    font-size: 23px;
 }
-.contact-item:hover::before {
-    opacity: 1;
-    top: 0;
-    left: 0;
+.contact-title p {
+    font-weight: 500;
 }
-.contact-item:active {
-    transform: translateY(0);
-}
-.contact-item-phone {
-    transition: all 0.3s;
-    background-color: var(--bg-tertiary);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-}
-.contact-item-phone h3 {
-    font-family: "Roboto", sans-serif;
-    color: var(--text-primary);
-    font-size: 18px;
-    font-weight: 700;
-}   
-.contact-item-phone p {
-    font-family: "Roboto", sans-serif;
-    color: var(--text-primary);
-    font-size: 18px;
-    font-weight: 700;
-}
-.contact-item-phone a {
-    text-decoration: none;
-    color: var(--text-primary);
-}
-.contact-item-phone:hover {
-    background-color: var(--bg-hover);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow);
-}
-.contact-item-phone::before { 
-    transition: all 0.3s;
-    opacity: 0;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-hover);
-    content: "Llamar";
-    font-family: "Roboto", sans-serif;
-    color: var(--text-primary);
-    font-size: 18px;
-    font-weight: 700;
-}
-.contact-item-phone:hover::before {
-    opacity: 1;
-    top: 0;
-    left: 0;
-}
-.contact-item-phone:active {
-    transform: translateY(0);
-}
-.contact-item-email {
-    transition: all 0.3s;
-    background-color: var(--bg-tertiary);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-}
-.contact-item-email h3 {
-    font-family: "Roboto", sans-serif;
-    color: var(--text-primary);
-    font-size: 18px;
-    font-weight: 700;
-}   
-.contact-item-email p {
-    font-family: "Roboto", sans-serif;
-    color: var(--text-primary);
-    font-size: 18px;
-    font-weight: 700;
-}
-.contact-item-email a {
-    text-decoration: none;
-    color: var(--text-primary);
-}
-.contact-item-email:hover {
-    background-color: var(--bg-hover);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow);
-}
-.contact-item-email::before { 
-    transition: all 0.3s;
-    opacity: 0;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-hover);
-    content: "Copiar al Portapapeles";
-    font-family: "Roboto", sans-serif;
-    color: var(--text-primary);
-    font-size: 18px;
-    font-weight: 700;
-}
-.contact-item-email:hover::before {
-    opacity: 1;
-    top: 0;
-    left: 0;
-}
-.contact-item-email:active {
-    transform: translateY(0);
+.contact-item a:hover {
+    border-radius: .5em;
 }
 
 /* Media Queries */
