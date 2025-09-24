@@ -2,9 +2,9 @@
 
 Portfolio personal optimizado para SEO y desplegado en Render.
 
-Este es un portafolio personal desarrollado con HTML, CSS y JavaScript. Está publicado usando *GitHub Pages*.
+Este es un portafolio personal desarrollado con HTML, CSS y JavaScript. Está publicado usando _GitHub Pages_.
 
-🔗 *URL del sitio:*  
+🔗 _URL del sitio:_  
 [https://jerielweb.github.io/portfolio/](https://jerielweb.github.io/portfolio/)
 
 ---
@@ -18,22 +18,18 @@ Ya lo tienes en:
 
 2. Activar GitHub Pages
 
-- Ir a *Settings* del repositorio
-- Luego a *Pages*
-- En *Source*, seleccionar la rama `main` y la carpeta `/ (root)`
+- Ir a _Settings_ del repositorio
+- Luego a _Pages_
+- En _Source_, seleccionar la rama `main` y la carpeta `/ (root)`
 - Guardar
 
 GitHub generará la URL del sitio automáticamente.
 
-
-
 📝 Notas
 
 - El archivo principal debe llamarse `index.html`
-- GitHub Pages solo admite sitios *estáticos* (sin back-end)
+- GitHub Pages solo admite sitios _estáticos_ (sin back-end)
 - Para actualizar tu sitio: sube cambios → `git add .`, `commit`, `push` y listo.
-
-
 
 3. **Actualizar URLs después del despliegue:**
 
@@ -44,6 +40,7 @@ GitHub generará la URL del sitio automáticamente.
    git push
 
 ```
+
 ## 📁 Estructura del proyecto
 
 ```
@@ -60,7 +57,8 @@ Portfolio/
    └── img/            # Ilustraciones de la web
 ├── scripts/
    ├── app.json        # App para el SEO
-   └── main.js         # Interacciòn del sitio
+   ├── nav.js          # Tema del sitio (Claro Oscuro)
+   └── theme.js        # Interacciòn del sitio
 ```
 
 ## 🔍 Optimizaciones SEO incluidas
@@ -79,12 +77,9 @@ Portfolio/
 - LinkedIn: [Jeriel Beckford Price](https://www.linkedin.com/in/jeriel-beckford-price-74ba24330/)
 - WhatsApp: +506 8923-7369
 
-
-
-
 Portafolio Web — Jeriel Web
 
-Este es un portafolio personal desarrollado con HTML, CSS y JavaScript. Está publicado usando *GitHub Pages*.
+Este es un portafolio personal desarrollado con HTML, CSS y JavaScript. Está publicado usando _GitHub Pages_.
 
-🔗 *URL del sitio:*  
+🔗 _URL del sitio:_  
 [https://jerielweb.github.io/portfolio/](https://jerielweb.github.io/portfolio/)
