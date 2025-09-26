@@ -1161,6 +1161,7 @@ nav .navigation a:hover {
     }
     
     .theme-toggle {
+        position: relative;
         margin-top: 0;
         margin-left: 10px;
     }
