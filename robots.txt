@@ -1,15 +1,3 @@
 User-agent: *
 Allow: /
-
-# Sitemap
 Sitemap: https://jerielweb.github.io/portfolio/sitemap.xml
-
-# Optimización para motores de búsqueda
-Crawl-delay: 1
-
-# Permitir acceso a recursos importantes
-Allow: /img/
-Allow: /svg/
-Allow: /doc/
-Allow: /styles.css
-Allow: /main.js

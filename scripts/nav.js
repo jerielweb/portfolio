@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
       function toggleMenu() {
     hamburgerBtn.classList.toggle('active')
     navMenu.classList.toggle('active')
-    navOverlay.classList.toggle('active')
     
     if (navMenu.classList.contains('active')) {
       document.body.style.overflow = 'hidden'
