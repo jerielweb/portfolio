@@ -402,8 +402,8 @@ nav .navigation a:hover {
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    width: 200px;
-    height: auto;
+    width: 150px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -434,7 +434,6 @@ nav .navigation a:hover {
         margin-top: 80px;
     }
     nav {
-        transition: all 0.3s ease-in-out;
         flex-direction: row;
         position: fixed;
         top: 0;
@@ -489,6 +488,7 @@ nav .navigation a:hover {
         gap: 10px;
     }
     .profile img {
+        margin: 5px;
         width: 50px;
         height: 50px;
     }
@@ -536,9 +536,9 @@ nav .navigation a:hover {
     .hamburger-btn span {
         width: 20px;
         height: 2px;
-        transition: all 0.3s ease-in-out;
         background-color: var(--text-primary);
         border-radius: 3px;
+        transition: all 0.3s ease-in-out;
         transform-origin: 1px;
     }
     
@@ -558,8 +558,8 @@ nav .navigation a:hover {
     
    
     .nav-menu {
-        transition: all 0.3s ease-in-out;
         position: fixed;
+        transition: all 0.3s ease-in-out;
         top: 0;
         right: -100%;
         width: 40%;
@@ -644,10 +644,6 @@ nav .navigation a:hover {
     .nav-menu .social-mobile .social-media a {
         transition: transform 0.3s ease-in-out;
     }
-    
-    .nav-menu .social-mobile .social-media a:hover {
-        transform: scale(1.2) rotate(5deg);
-    }
 
     .name {
         padding-left: 5px;
@@ -659,8 +655,15 @@ nav .navigation a:hover {
     }
     
     .theme-toggle {
-        margin-top: 0;
-        margin-left: 10px;
+        z-index: 5000;        
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateX(260px) translateY(-2px) !important;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .theme-switch {
@@ -719,6 +722,28 @@ nav .navigation a:hover {
       width: 30px;
       height: 30px;
     }
+    .cv:hover {
+        background-color: var(--bg-hover);
+        color: var(--text-primary);
+    }
+    .cv:active {
+        border-radius: 5px;
+    }
+    .cv-button {
+        text-align: center;
+    }
+    .logo-tanah-basah {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 30px;
+        height: 30px;
+        margin-top: 12px;
+    }
+    .logo-tanah-basah img {
+        margin-bottom: 8px !important;
+        width: 30px;
+        height: 30px;
+    }
     
     .theme-toggle {
         z-index: 5000;
@@ -742,19 +767,23 @@ nav .navigation a:hover {
         font-size: 43px;
     }
     main {
-        top: 3em;
         margin: 0;
         width: 100%;
-        position: relative;
+        padding: 0 2px;
         gap: 20px;
         margin-top: 70px;
+    }
+    .knowledge-section {
+        flex-wrap: wrap;
+        transform: scale(0.95);
+        width: 100%;
     }
     .theme-toggle {
         z-index: 5000;        
         position: relative;
         top: 0;
         left: 0;
-        transform: translateX(15px) translateY(-2px);
+        transform: translateX(40px) translateY(-2px) !important;
         margin-top: 5px;
         display: flex;
         justify-content: center;
@@ -768,25 +797,6 @@ nav .navigation a:hover {
         align-items: center;
         gap: 10px;
     }
-    .knowledge {
-        padding: 10px 0;
-        height: auto;
-    }
-    .knowledge-list {
-        gap: 10px;
-        margin-top: 10px;
-    }
-    .knowledge-item {
-        width: 140px;
-        height: 180px;
-        padding: 8px;
-        background-color: var(--bg-tertiary);
-    }
-    .knowledge-item img {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 4px;
-    }
     .social-mobile {
         gap: 10 !important;
         margin: 0 !important;
@@ -794,14 +804,6 @@ nav .navigation a:hover {
         display: flex !important;
         width: 100% !important;
         height: 10% !important;
-    }
-    .knowledge-item p {
-        font-size: 14px;
-        font-weight: 700;
-        color: var(--text-primary);
-        margin: 0;
-        padding: 0;
-        margin-top: 5px;
     }
     nav {
         position: fixed;
