@@ -6,52 +6,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const iconThemes = {
         'cv-icon': {
-            light: '../assets/icons/cv-light.svg',
-            dark: '../assets/icons/cv-dark.svg',
+            light: 'assets/icons/cv-light.svg',
+            dark: 'assets/icons/cv-dark.svg',
         },
         'mail-icon': {
-            light: '../assets/icons/mail-light.svg',
-            dark: '../assets/icons/mail-dark.svg',
+            light: 'assets/icons/mail-light.svg',
+            dark: 'assets/icons/mail-dark.svg',
         },
         'proyect-icon': {
-            light: '../assets/icons/code-light.svg',
-            dark: '../assets/icons/code-dark.svg',
+            light: 'assets/icons/code-light.svg',
+            dark: 'assets/icons/code-dark.svg',
         },
         'github-icon': {
-            light: '../assets/icons/github-light.svg',
-            dark: '../assets/icons/github-dark.svg',
+            light: 'assets/icons/github-light.svg',
+            dark: 'assets/icons/github-dark.svg',
         },
         'link-icon': {
-            light: '../assets/icons/link-light.svg',
-            dark: '../assets/icons/link-dark.svg',
+            light: 'assets/icons/link-light.svg',
+            dark: 'assets/icons/link-dark.svg',
         },
         'knowledge-icon': {
-            light: '../assets/icons/know-light.svg',
-            dark: '../assets/icons/know-dark.svg',
+            light: 'assets/icons/know-light.svg',
+            dark: 'assets/icons/know-dark.svg',
         },
         'education-icon': {
-            light: '../assets/icons/edu-light.svg',
-            dark: '../assets/icons/edu-dark.svg',
+            light: 'assets/icons/edu-light.svg',
+            dark: 'assets/icons/edu-dark.svg',
         },
         'contact-icon': {
-            light: '../assets/icons/contact-light.svg',
-            dark: '../assets/icons/contact-dark.svg',
+            light: 'assets/icons/contact-light.svg',
+            dark: 'assets/icons/contact-dark.svg',
         },
         'copy-icon': {
-            light: '../assets/icons/copy-light.svg',
-            dark: '../assets/icons/copy-dark.svg',
+            light: 'assets/icons/copy-light.svg',
+            dark: 'assets/icons/copy-dark.svg',
         },
         'phone-icon': {
-            light: '../assets/icons/tel-light.svg',
-            dark: '../assets/icons/tel-dark.svg',
+            light: 'assets/icons/tel-light.svg',
+            dark: 'assets/icons/tel-dark.svg',
         },
         'whatsapp-icon': {
-            light: '../assets/icons/whatsapp-light.svg',
-            dark: '../assets/icons/whatsapp-dark.svg',
+            light: 'assets/icons/whatsapp-light.svg',
+            dark: 'assets/icons/whatsapp-dark.svg',
         }, 
         'telegram-icon': {
-            light: '../assets/icons/telegram-light.svg',
-            dark: '../assets/icons/telegram-dark.svg',
+            light: 'assets/icons/telegram-light.svg',
+            dark: 'assets/icons/telegram-dark.svg',
         },
     };
 
