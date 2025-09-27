@@ -141,7 +141,6 @@ main {
     flex-direction: column;
     width: calc(100% - 250px);
     gap: 38px;
-    background: linear-gradient(to bottom, transparent 0%, var(--bg-primary) 20%, var(--bg-primary) 100%);
 }
 a {
     padding: 5px;
