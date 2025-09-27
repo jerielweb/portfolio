@@ -9,66 +9,53 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="content">
-                        <div class="profile">
-                        <img src="assets/img/profile.webp" alt="Jeriel Beckford Price - Desarrollador Web Frontend"><br>
-                        <b class="name">JERIEL JALEEL<br>BECKFORD PRICE</b>
-                        <p class="role"> Estudiante de Desarrollo Web</p>
-            </div>
-                <!-- Interruptor de tema -->
-                <div class="theme-toggle">
-                    <label class="theme-switch">
-                        <input type="checkbox" id="themeToggle">
-                        <span class="slider">
-                            <span class="theme-icon">
-                                <span class="moon-icon"></span>
-                                <span class="sun-icon"></span>
-                            </span>
-                        </span>   
-                    </label>
-                </div>
-            
-
-
+        <div class="profile">
+            <img src="assets/img/profile.webp" alt="Jeriel Beckford Price - Desarrollador Web Frontend"><br>
+            <b class="name">JERIEL JALEEL<br>BECKFORD PRICE</b>
+            <p class="role"> Estudiante de Desarrollo Web</p>
+        </div>
+        <nav class="nav-menu" id="navMenu">
             <div class="navigation">
-                <div class="hamburger-btn" id="hamburgerBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                
-            <div class="nav-menu" id="navMenu">
-                <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#projects"  id="active">Proyectos</a></li>
-                        <li><a href="knowledge.html">Conocimientos</a></li>
-                        <li><a href="#education">Educación</a></li>
-                        <!-- li><a href="#experience">Experiencia</a></li -->
-                        <li><a href="index.html#contact">Contacto</a></li>
-                </ul> 
-                <div class="social-mobile">
-                    <h3 id="social-media-title">Redes Sociales</h3>
-                    <div class="social-media" id="social-media">
-                        <a href="https://www.linkedin.com/in/jeriel-beckford-price-74ba24330/" target="_blank"><img width="40" height="40" src="assets/favicon/linkedin.png" alt="linkedin"/></a>
-                        <a href="https://github.com/jerielweb" target="_blank"><img width="40" height="40" src="assets/favicon/github.png" alt="github"/></a>
-                        <a href="https://wa.me/50689237369" target="_blank"><img width="40" height="40" src="assets/favicon/whatsapp.png" alt="whatsapp"/></a>
+                <div  id="navMenu">
+                    <ul class="nav-links">
+                            <li><a href="index.html"">Inicio</a></li>
+                            <li><a href="#projects" id="active">Proyectos</a></li>
+                            <li><a href="knowledge.html">Conocimientos</a></li>
+                            <li><a href="index.html#education">Educación</a></li>
+                            <!-- li><a href="#experience">Experiencia</a></li -->
+                            <li><a href="index.html#contact">Contacto</a></li>
+                    </ul> 
+                    <div class="theme-toggle">
+                        <img src="assets/icons/dark_mode-light.svg" alt="Modo Oscuro/Claro" class="icon-theme" id="dark-mode">
+                        <label class="theme-switch">
+                            <input type="checkbox" id="themeToggle">
+                            <span class="slider">
+                                <span class="theme-icon">
+                                    <span class="moon-icon"></span>
+                                    <span class="sun-icon"></span>
+                                </span>
+                            </span>   
+                        </label>
+                        <img src="assets/icons/light_mode-light.svg" alt="Modo Oscuro/Claro" class="icon-theme" id="light-mode">
                     </div>
                 </div>
             </div>
+
+            <div class="social">
+                <h3>Redes Sociales</h3>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/jeriel-beckford-price-74ba24330/" target="_blank"><img width="50" height="50" src="assets/favicon/linkedin.png" alt="linkedin"></a>
+                    <a href="#" target="_blank"><img width="50" height="50" src="assets/favicon/github.png" alt="github"></a>
+                    <a href="https://wa.me/50689237369" target="_blank"><img width="50" height="50" src="assets/favicon/whatsapp.png" alt="whatsapp"></a>
+                </div>
+            </div>		
+        </nav>
+        <div class="hamburger-btn" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="nav-overlay" id="navOverlay"></div>
-    </div>
-    <div class="social">
-        <h3>Redes Sociales</h3>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/jeriel-beckford-price-74ba24330/" target="_blank"><img width="50" height="50" src="assets/favicon/linkedin.png" alt="linkedin"></a>
-            <a href="#" target="_blank"><img width="50" height="50" src="assets/favicon/github.png" alt="github"></a>
-            <a href="https://wa.me/50689237369" target="_blank"><img width="50" height="50" src="assets/favicon/whatsapp.png" alt="whatsapp"></a>
-        </div>
-    </div>		
-</nav>
-<script type="module" src="scripts/nav.js"></script>
+        <script type="module" src="scripts/nav.js"></script>
     </header>
     <main>
         <section class="projects" id="projects">

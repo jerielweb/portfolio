@@ -53,6 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
             light: 'assets/icons/telegram-light.svg',
             dark: 'assets/icons/telegram-dark.svg',
         },
+        'dark-mode': {
+            light: 'assets/icons/dark_mode-light.svg',
+            dark: 'assets/icons/dark_mode-dark.svg',
+        },
+        'light-mode': {
+            light: 'assets/icons/light_mode-light.svg',
+            dark: 'assets/icons/light_mode-dark.svg',
+        },
     };
 
     function getSystemTheme() {
