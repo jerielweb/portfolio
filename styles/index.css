@@ -890,7 +890,7 @@ nav .navigation a:hover {
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    width: 17em;
+    width: 20em;
     height: auto;
     position: relative;
 }
@@ -902,14 +902,15 @@ nav .navigation a:hover {
     height: 80px;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 .contact-link-mail a {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 47%;
-    min-width: 60px;
+    width: 50%;
+    min-width: 50px;
     border: var(--border-color) 2px solid;
     border-radius: 25px;
     margin-top: 30px;
@@ -922,13 +923,14 @@ nav .navigation a:hover {
     height: 80px;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
 }
 .contact-link-phone a {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
+    width: 100%;
     min-width: 50px;
     border: var(--border-color) 2px solid;
     border-radius: 25px;
@@ -944,6 +946,8 @@ nav .navigation a:hover {
     background-color: var(--bg-hover);
 }
 .contact-title h3 {
+    display: flex;
+    width: 100%;
     font-size: 23px;
     text-align: center;
 }
@@ -1006,6 +1010,15 @@ nav .navigation a:hover {
 .contact-item-form button:hover {
     border-radius: .5em;
     background-color: var(--bg-hover);
+}
+.contact-item-form h3 {
+    font-size: 23px;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.contact-item-form p {
+    margin-bottom: 5px;
 }
 footer {
     position: relative;
@@ -1314,7 +1327,7 @@ footer a:visited {
         height: 30px;
     }
     .contact-item-form {
-        width: 17em;
+        width: 20em;
     }
     .contact-item-form button {
         width: 100%
