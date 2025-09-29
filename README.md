@@ -57,8 +57,8 @@ Portfolio/
    └── img/            # Ilustraciones de la web
 ├── scripts/
    ├── app.json        # App para el SEO
-   ├── nav.js          # Tema del sitio (Claro Oscuro)
-   └── theme.js        # Interacciòn del sitio
+   ├── theme.js        # Tema del sitio (Claro Oscuro)
+   └── nav.js          # Barra de navegación del sitio funcional
 ```
 
 ## 🔍 Optimizaciones SEO incluidas
