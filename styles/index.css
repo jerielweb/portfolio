@@ -4,22 +4,7 @@
 /* Variables de tema */
 :root {
     --bg-primary: #11001d;
-    --bg-secondary: #2a0e57;
-    --bg-tertiary: #431464;
-    --bg-hover: #703d8d;
-    --text-primary: #eee2fd;
-    --text-secondary: #dfc6fe;
-    --text-accent: #cca2ff;
-    --text-link: #ad6dfc;
-    --text-link-hover: #cca2ff;
-    --border-color: #9861bd;
-    --progress-bg: #6f00ff;
-    --progress-value: #4b00a7;
-    --shadow: rgba(0, 0, 0, 0.3);
-}
-
-[data-theme="dark"] {
-    --bg-primary: #11001d;        
+    --bg-footer: #1a0033;
     --bg-secondary: #2a0e57;
     --bg-tertiary: #431464;
     --bg-hover: #703d8d;
@@ -53,8 +38,27 @@ picture img {
     z-index: -1;
 }
 
+[data-theme="dark"] {
+    --bg-primary: #11001d;
+    --bg-footer: #1a0033;        
+    --bg-secondary: #2a0e57;
+    --bg-tertiary: #431464;
+    --bg-hover: #703d8d;
+    --text-primary: #eee2fd;
+    --text-secondary: #dfc6fe;
+    --text-accent: #cca2ff;
+    --text-link: #ad6dfc;
+    --text-link-hover: #cca2ff;
+    --border-color: #9861bd;
+    --progress-bg: #6f00ff;
+    --progress-value: #4b00a7;
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+
+
 [data-theme="light"] {
     --bg-primary: #f8f4ff;
+    --bg-footer: #d0b9e6;
     --bg-secondary: #ffffff;
     --bg-tertiary: #e8d5ff;
     --bg-hover: #d4b5ff;
@@ -72,6 +76,7 @@ picture img {
 @media (prefers-color-scheme: dark) {
     html:not([data-theme]) {
         --bg-primary: #11001d;
+        --bg-footer: #1a0033;
         --bg-secondary: #2a0e57;
         --bg-tertiary: #431464;
         --bg-hover: #703d8d;
@@ -90,6 +95,7 @@ picture img {
 @media (prefers-color-scheme: light) {
     html:not([data-theme]) {
         --bg-primary: #f8f4ff;
+        --bg-footer: #d0b9e6;
         --bg-secondary: #ffffff;
         --bg-tertiary: #e8d5ff;
         --bg-hover: #d4b5ff;
@@ -119,6 +125,7 @@ html, body, main {
 html {
     scrollbar-width: none;
     scroll-behavior: smooth;
+    width: 100%;
 }
 body {
     background-color: var(--bg-primary);
@@ -126,6 +133,7 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 main {
     position: relative;
@@ -956,6 +964,28 @@ nav .navigation a:hover {
 .contact-item a:hover {
     border-radius: .5em;
 }
+footer {
+    position: relative;
+    left: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--bg-footer);
+    color: var(--text-secondary);
+    font-size: 14px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 20px;
+}
+footer a {
+    color: var(--text-link);
+    font-weight: 700;
+    font-size: 14px;
+}
+footer a:hover, footer a:active { 
+    color: var(--text-link-hover);
+}
+footer a:visited {
+    color: var(--text-link);
+}
 
 /* Media Queries */
 @media (max-width: 900px) {
@@ -981,7 +1011,13 @@ nav .navigation a:hover {
         background-color: var(--bg-secondary);
         box-shadow: 0 2px 10px var(--shadow);
     }
-
+    footer {
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 13px;
+        margin-top: 0;
+    }
     .social {
         gap: 0;
         margin: 0;
@@ -1235,6 +1271,12 @@ nav .navigation a:hover {
     .section-title {
         font-size: 43px;
     }
+    .about {
+        height: auto;
+        min-height: 100vh;
+        padding: 10px 0;
+        gap: 0px;
+    }
     main {
         margin: 0;
         width: 100%;
@@ -1321,11 +1363,12 @@ nav .navigation a:hover {
         border-radius: 20px;
     }
     .buttons-icons {
-        display: block;
+        align-items: flex-start;
+        display: flex;
+        height: 100px;
         flex-direction: column;
         justify-content: center;
         align-items: left;
-        min-height: 50px;
         justify-content: left;
     }
     .buttons-icons a {
@@ -1431,7 +1474,17 @@ nav .navigation a:hover {
         width: 40px;
         height: 40px;
     }
+    .logo-tanah-basah {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 30px;
+        height: 30px;
+        margin-top: 12px;
+    }
     .logo-tanah-basah img {
+        margin-top: 20px;
         margin-bottom: 5px;
         width: 30px;
         height: 30px;
