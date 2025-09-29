@@ -47,7 +47,6 @@ GitHub generará la URL del sitio automáticamente.
 Portfolio/
 ├── index.html         # Página principal optimizada para SEO
 ├── styles.css         # Estilos CSS
-├── main.js            # JavaScript
 ├── robots.txt         # Configuración motores de búsqueda
 ├── sitemap.xml        # Mapa del sitio
 ├── assets/
