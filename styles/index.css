@@ -945,6 +945,7 @@ nav .navigation a:hover {
 }
 .contact-title h3 {
     font-size: 23px;
+    text-align: center;
 }
 .contact-title p {
     font-weight: 500;
