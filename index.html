@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeriel Beckford - Desarrollador Web Frontend | Portfolio</title>
     <!-- Meta tags para SEO -->
@@ -34,6 +35,9 @@
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="icon" href="assets/favicon/icon.png">
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <![endif]-->
     <noscript> 
         <div style="position: fixed; z-index: 1000; top: 100px; left: 50%; translate: -50% 0; padding: 20px; background-color: #ffdddd; border: 1px solid #ff5c5c; color: #333; border-radius: 8px; text-align: center; font-family: Arial, sans-serif;"> 
         
@@ -351,8 +355,25 @@
                         <img class="icon-theme" id="telegram-icon" src="assets/icons/telegram-dark.svg">
                     </a>
                 </div>
+                
             </div>
-            
+            <div class="contact-item-form">
+                <form action="https://formspree.io/f/mblzgedl" method="POST" enctype="multipart/form-data">
+                    <label for="company">Empresa/Negocio:</label>
+                    <input type="text" id="company" name="Company" required>
+
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="Name" required>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="Email" required>
+                    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="Message" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
     </section>
     </main>

@@ -108,11 +108,13 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    align-items: center;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     padding: 15px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 main {
     position: relative;
@@ -197,7 +199,9 @@ header {
     display: flex;
     flex-direction: column;
     /*justify-content: space-between;*/
-    box-shadow: 2px 0 10px var(--shadow);
+    box-shadow: 0 2px 4px var(--shadow);
+    -webkit-box-shadow: 0 2px 4px var(--shadow);
+    -moz-box-shadow: 0 2px 4px var(--shadow);
 }
 header .navigation a.active {
     color: var(--text-primary);
@@ -616,7 +620,9 @@ nav .navigation a:hover {
 footer {
     position: relative;
     z-index: -1;
-    left: 30px;
+    left: 100px;
+    width: 100%;
+    height: auto;
     padding: 10px;
     text-align: center;
     background-color: var(--bg-footer);
