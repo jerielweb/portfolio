@@ -1,23 +1,6 @@
 /* Body */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Variables de tema */
-:root {
-    --bg-primary: #11001d;
-    --bg-footer: #1a0033;
-    --bg-secondary: #2a0e57;
-    --bg-tertiary: #431464;
-    --bg-hover: #703d8d;
-    --text-primary: #eee2fd;
-    --text-secondary: #dfc6fe;
-    --text-accent: #cca2ff;
-    --text-link: #ad6dfc;
-    --text-link-hover: #cca2ff;
-    --border-color: #9861bd;
-    --progress-bg: #6f00ff;
-    --progress-value: #4b00a7;
-    --shadow: rgba(0, 0, 0, 0.3);
-}
 section {
     position: relative;
     z-index: 1000;
