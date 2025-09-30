@@ -10,6 +10,57 @@
             <!--[if lt IE 9]>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
             <![endif]-->
+            <script>
+                fetch('scripts/structured-data.json')
+                    .then(response => response.text())
+                    .then(json => {
+                        const script = document.createElement('script');
+                        script.type = 'application/ld+json';
+                        script.text = json;
+                        document.head.appendChild(script);
+                    });
+            </script>
+            <meta name="description" content="Conocimientos y habilidades de Jeriel Beckford Price, desarrollador web frontend. Descubre las tecnologías y herramientas que manejo.">
+            <meta name="keywords" content="Jeriel Beckford Price, conocimientos, habilidades, desarrollador web, frontend, HTML, CSS, JavaScript, portfolio, Costa Rica, herramientas, tecnologías, Git, Node.js, VSCode, github, linkedin, whatsapp">
+            <meta name="author" content="Jeriel Beckford Price">
+            <meta name="robots" content="index, follow">
+            <link rel="canonical" href="https://jerielweb.github.io/portfolio/knowledge.html">
+            <link rel="alternate" hreflang="es" href="https://jerielweb.github.io/portfolio/knowledge.html" />
+            <link rel="alternate" hreflang="en" href="https://jerielweb.github.io/portfolio/en/knowledge.html" />
+            <meta property="og:title" content="Conocimientos | Jeriel Beckford Price">
+            <meta property="og:description" content="Conocimientos y habilidades de Jeriel Beckford Price, desarrollador web frontend en Costa Rica. Descubre las tecnologías y herramientas que manejo.">
+            <meta property="og:type" content="website">
+            <meta property="og:url" content="https://jerielweb.github.io/portfolio/knowledge.html">
+            <meta property="og:image" content="https://jerielweb.github.io/portfolio/assets/img/profile.webp">
+            <meta property="og:site_name" content="Jeriel Beckford Price Portfolio">
+            <meta property="og:locale" content="es_ES">
+            <meta property="og:image:alt" content="Foto de perfil de Jeriel Beckford Price, desarrollador web frontend">
+            <meta property="og:image:type" content="image/webp">
+            <meta property="og:image:width" content="400">
+            <meta property="og:image:height" content="400">
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="Conocimientos | Jeriel Beckford Price">
+            <meta name="twitter:description" content="Conocimientos y habilidades de Jeriel Beckford Price, desarrollador web frontend en Costa Rica. Descubre las tecnologías y herramientas que manejo.">
+            <meta name="twitter:image" content="https://jerielweb.github.io/portfolio/assets/img/profile.webp">
+            <meta name="twitter:image:alt" content="Foto de perfil de Jeriel Beckford Price, desarrollador web frontend">
+            <meta name="twitter:site" content="@jerielweb">
+            <meta name="twitter:creator" content="@jerielweb">
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Jeriel Beckford Price",
+                "url": "https://jerielweb.github.io/portfolio/knowledge.html",
+                "image": "https://jerielweb.github.io/portfolio/assets/img/profile.webp",
+                "jobTitle": "Desarrollador Web Frontend",
+                "description": "Conocimientos y habilidades de Jeriel Beckford Price, desarrollador web frontend especializado en HTML, CSS y JavaScript.",
+                "sameAs": [
+                    "https://www.linkedin.com/in/jeriel-beckford-price-74ba24330/",
+                    "https://github.com/jerielweb/portfolio",
+                    "https://wa.me/50689237369"
+                ]
+            }
+            </script>
 </head>
 <body>
     <header>

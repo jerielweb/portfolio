@@ -6,38 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeriel Beckford - Desarrollador Web Frontend | Portfolio</title>
     <!-- Meta tags para SEO -->
-    <meta name="description" content="Portfolio de Jeriel Beckford Price, estudiante de desarrollo web frontend especializado en HTML, CSS y JavaScript. Descubre mis proyectos y habilidades en programación web.">
-    <meta name="keywords" content="Jeriel Beckford Price, desarrollador web, frontend, HTML, CSS, JavaScript, portfolio, programador, Costa Rica, INA">
+    <meta name="description" content="Portfolio de Jeriel Beckford Price, estudiante de desarrollo web frontend especializado en HTML, CSS y JavaScript. Descubre mis proyectos, habilidades y contacto profesional.">
+    <meta name="keywords" content="Jeriel Beckford Price, desarrollador web, frontend, HTML, CSS, JavaScript, portfolio, programador, Costa Rica, INA, proyectos, habilidades, contacto, curriculum, CV, experiencia, educación, herramientas, tecnologías, Git, Node.js, VSCode, diseño web, responsive, accesibilidad, SEO, optimización, web moderna, github, linkedin, whatsapp">
     <meta name="author" content="Jeriel Beckford Price">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Spanish">
     <meta name="geo.region" content="CR">
     <meta name="geo.country" content="Costa Rica">
+    <link rel="canonical" href="https://jerielweb.github.io/portfolio/">
+    <link rel="alternate" hreflang="es" href="https://jerielweb.github.io/portfolio/" />
+    <link rel="alternate" hreflang="en" href="https://jerielweb.github.io/portfolio/en/" />
 
     
 
     <meta property="og:title" content="Jeriel Beckford Price - Desarrollador Web Frontend">
-    <meta property="og:description" content="Portfolio de Jeriel Beckford Price, estudiante de desarrollo web frontend especializado en HTML, CSS y JavaScript.">
+    <meta property="og:description" content="Descubre el portfolio profesional de Jeriel Beckford Price, desarrollador web frontend en Costa Rica. Proyectos, conocimientos, contacto y más.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jerielweb.github.io/portfolio/">
     <meta property="og:image" content="https://jerielweb.github.io/portfolio/assets/img/profile.webp">
     <meta property="og:site_name" content="Jeriel Beckford Price Portfolio">
     <meta property="og:locale" content="es_ES">
+    <meta property="og:image:alt" content="Foto de perfil de Jeriel Beckford Price, desarrollador web frontend">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
     
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Jeriel Beckford Price - Desarrollador Web Frontend">
-    <meta name="twitter:description" content="Portfolio de Jeriel Beckford Price, estudiante de desarrollo web frontend especializado en HTML, CSS y JavaScript.">
-    <meta name="twitter:image" content="https://jerielweb.github.io/jeriel-porfolio/img/profile.webp">
-    
- 
-    <script type="application/ld+json" src="scripts/application/ld+json.json"></script>
+    <meta name="twitter:description" content="Descubre el portfolio profesional de Jeriel Beckford Price, desarrollador web frontend en Costa Rica. Proyectos, conocimientos, contacto y más.">
+    <meta name="twitter:image" content="https://jerielweb.github.io/portfolio/assets/img/profile.webp">
+    <meta name="twitter:image:alt" content="Foto de perfil de Jeriel Beckford Price, desarrollador web frontend">
+    <meta name="twitter:site" content="@jerielweb">
+    <meta name="twitter:creator" content="@jerielweb">
+    <script>
+                fetch('scripts/structured-data.json')
+                    .then(response => response.text())
+                    .then(json => {
+                        const script = document.createElement('script');
+                        script.type = 'application/ld+json';
+                        script.text = json;
+                        document.head.appendChild(script);
+                    });
+    </script>
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="icon" href="assets/favicon/icon.png">
-            <!--[if lt IE 9]>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
     <noscript> 
         <div style="position: fixed; z-index: 1000; top: 100px; left: 50%; translate: -50% 0; padding: 20px; background-color: #ffdddd; border: 1px solid #ff5c5c; color: #333; border-radius: 8px; text-align: center; font-family: Arial, sans-serif;"> 
         
@@ -110,7 +128,7 @@
             </p>
         </div>
         <div class="buttons-icons">
-            <a href="assets/doc/cv_de_jeriel_beckford.pdf" target="_blank" id="mail-button">
+            <a href="assets/doc/BeckfordJerielResume.pdf" target="_blank" id="mail-button">
                 <img icon-cv class="icon-theme" id="cv-icon" src="assets/icons/cv-light.svg" alt="Icono Ilustrativo">
                 Ver Mi CV
             </a>

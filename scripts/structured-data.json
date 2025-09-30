@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jeriel Beckford Price",
+  "url": "https://jerielweb.github.io/portfolio/",
+  "image": "https://jerielweb.github.io/portfolio/assets/img/profile.webp",
+  "jobTitle": "Desarrollador Web Frontend",
+  "description": "Portfolio profesional de Jeriel Beckford Price, desarrollador web frontend especializado en HTML, CSS y JavaScript.",
+  "sameAs": [
+    "https://www.linkedin.com/in/jeriel-beckford-price-74ba24330/",
+    "https://github.com/jerielweb/portfolio",
+    "https://wa.me/50689237369"
+  ]
+}
