@@ -102,6 +102,37 @@ html, body, main {
     transition: all 150ms ease;
     font-family: 'Roboto', sans-serif;
 }
+#new {
+    bottom: .2rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    background-color: var(--bg-hover);
+    padding: 5px 10px;
+    scale: .8;
+    border-radius: 5px;
+    border: 1px solid;
+}
+#new_item {
+    top: -2px;
+    right: 5.6rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    background-color: var(--bg-hover);
+    padding: 5px 10px;
+    rotate: -45deg;
+    scale: .8;
+    border-radius: 5px;
+    border: 1px solid;
+}
+div {
+    position: relative;
+}
 
 html {
     scrollbar-width: none;
