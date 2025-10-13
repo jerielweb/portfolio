@@ -20,7 +20,37 @@ picture img {
     pointer-events: none;
     z-index: -1;
 }
-
+#new {
+    bottom: .2rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    background-color: var(--bg-hover);
+    padding: 5px 10px;
+    scale: .8;
+    border-radius: 5px;
+    border: 1px solid;
+}
+#new_item {
+    top: -2px;
+    right: 5.6rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    background-color: var(--bg-hover);
+    padding: 5px 10px;
+    rotate: -45deg;
+    scale: .8;
+    border-radius: 5px;
+    border: 1px solid;
+}
+div {
+    position: relative;
+}
 [data-theme="dark"] {
     --bg-primary: #11001d;
     --bg-footer: #1a0033;        
@@ -714,11 +744,13 @@ nav .navigation a:hover {
     height: auto;
     display: flex;
     flex-direction: column;
+    place-content: center;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s, transform 0.3s;
 }
 .knowledge-item img {
+    margin-top: 10px;
     width: 100px;
     height: 100px;
     margin-bottom: 8px;
@@ -728,11 +760,13 @@ nav .navigation a:hover {
     color: var(--text-primary);
     font-size: 18px;
     font-weight: 700;
+    margin-bottom: 0;
 }
+
 /* Education Section */
 .education {
     width: 95%;
-    max-width: 160vh;
+    max-width: 160dvh;
     height: auto;
     padding: 20px;
     display: flex;
