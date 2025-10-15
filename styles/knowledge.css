@@ -21,7 +21,7 @@
 
 [data-theme="dark"] {
     --bg-primary: #11001d;
-    --bg-footer: #1a0033;        
+    --bg-footer: #1a0033;
     --bg-secondary: #2a0e57;
     --bg-tertiary: #431464;
     --bg-hover: #703d8d;
@@ -117,7 +117,7 @@ html, body, main {
 }
 #new_item {
     top: -2px;
-    right: 5.6rem;
+    left: -1rem;
     font-family: "Roboto", sans-serif;
     color: var(--text-primary);
     font-size: 18px;

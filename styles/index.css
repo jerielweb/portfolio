@@ -35,7 +35,7 @@ picture img {
 }
 #new_item {
     top: -2px;
-    right: 5.6rem;
+    left: -1rem;
     font-family: "Roboto", sans-serif;
     color: var(--text-primary);
     font-size: 18px;
